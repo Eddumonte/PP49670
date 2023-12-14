@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&display=swap');
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: black  ;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    font-family: 'Gothic A1', sans-serif;
+}
+
+.main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.main__section-article-video{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.main__section{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.main__section-img{
+    width: 431px;
+    height: 330px;
+    opacity: 40%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    display: flex;
+    margin-top: 15%;
+    margin-bottom: 20%;
+    margin-left: 37.5%;
+    z-index: 2;
+}
+
+.h1__index{
+    position: absolute;
+    margin: 60%;
+    color: #ffaa4400;
+}
+
+h1{
+    position: absolute;
+    margin-top: 80px;
+    color: #fa4;
+}
+
+p{
+    width: 100%;
+    height: auto;
+    color: #fa4;
+    position: absolute;
+    display: block;
+    margin-top: 150px;
+    z-index: 5;
+}

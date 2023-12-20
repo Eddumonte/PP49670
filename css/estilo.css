@@ -133,11 +133,11 @@ p {
   height: 40px;
   text-transform: capitalize;
 }
-#contact #textarea {
+#contact .mensaje {
   resize: none;
   text-transform: capitalize;
 }
-#contact .nombre, #contact .mail, #contact #textarea {
+#contact .nombre, #contact .mail, #contact .mensaje {
   width: 350px;
   border-color: rgba(255, 170, 68, 0.6666666667);
   background-color: black;
@@ -193,7 +193,7 @@ p {
   display: none;
 }
 
-@media (min-width: 1021px) and (max-width: 1150px) {
+@media (max-width: 1150px) {
   .redes {
     flex-direction: column;
   }
@@ -214,14 +214,12 @@ p {
     font-size: 18px;
   }
   .main__contact {
-    background-color: rgba(0, 0, 0, 0.6);
     justify-content: center;
   }
   .main__contact #contact {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
-    background-color: rgba(0, 0, 0, 0.6);
     height: 100vh;
     width: auto;
   }
@@ -233,15 +231,16 @@ p {
   }
   .main__contact .contact__data .redes {
     font-size: 20px;
-    flex-direction: column;
   }
 }
 @media (max-width: 599px) {
   #contact {
+    background-color: rgba(0, 0, 0, 0);
     display: block;
   }
   #contact .contact__form {
     width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
   }
   .nav__ul {
     display: grid;
@@ -253,12 +252,16 @@ p {
   }
   .contact__data {
     display: grid;
+    background-color: rgba(0, 0, 0, 0.6);
   }
   .nav__a {
     display: block;
   }
   .nav__logo {
     margin: 0;
+  }
+  .main__contact {
+    overflow: scroll;
   }
 }
 

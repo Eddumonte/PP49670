@@ -83,11 +83,11 @@ p{
         height: 40px;
         text-transform: capitalize;
     }
-    #textarea{
+    .mensaje{
         resize: none;
         text-transform: capitalize;
     }
-    .nombre, .mail, #textarea{
+    .nombre, .mail, .mensaje{
         width: 350px;
         border-color: #ffaa44aa;
         background-color: black;

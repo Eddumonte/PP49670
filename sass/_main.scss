@@ -26,9 +26,8 @@ body {
         }
     }
 }
-
-.main__section-article-video {
-    width: 100%;
+.main__section-article{
+    overflow: hidden;
 }
 
 .main__section-img {
@@ -44,7 +43,6 @@ body {
 }
 
 h1{
-
     color: #fa4;
 }
 
@@ -65,11 +63,10 @@ p{
     }
 }
 #contact{
-    height: 45%;
+    height: auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    align-items: center;
     z-index: 1;
     background-color: #00000099;
     .contact__form{
@@ -83,16 +80,15 @@ p{
         }
     }
     .nombre, .mail {
-        width: 350px;
         height: 40px;
         text-transform: capitalize;
     }
     #textarea{
-        width: 350px;
         resize: none;
         text-transform: capitalize;
     }
     .nombre, .mail, #textarea{
+        width: 350px;
         border-color: #ffaa44aa;
         background-color: black;
         -webkit-text-fill-color: #fa4;
@@ -123,32 +119,5 @@ p{
         text-transform: capitalize;
         font-size: 30px;
         font-weight: bold;
-    }
-}
-@media (max-width: 1100px){
-    .main__contact{
-        background-color: #00000099;
-        justify-content: center;
-
-    }
-    #contact{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
-        background-color: #00000000;
-        height: 100vh;
-        width: auto;
-    }
-    .contact__data{
-        font-size: 10px;
-        width: auto;
-    }
-    .info{
-        width: 350px;
-    }
-    .redes{
-        display: block;
-        flex-direction: column;
-        font-size: 12px;
     }
 }

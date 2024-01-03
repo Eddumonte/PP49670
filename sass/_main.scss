@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #fa4;
 }
 
 body {
@@ -10,45 +11,33 @@ body {
     background-color: black;
     min-height: 100vh;
     font-family: "Gothic A1", sans-serif;
-}
-
-.main {
-    width: 100%;
-    position: relative;
-    &__section {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-        &-article{
+    .main {
         width: 100%;
-        text-align: center;
+        position: relative;
+        &__section {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &-article{
+                width: 100%;
+                text-align: center; 
+                overflow: hidden;
+            }
+            &-img {
+                position: absolute;
+                width: 40%;
+                height: auto;
+                opacity: 40%;
+                z-index: 2;
+            }
         }
     }
 }
-.main__section-article{
-    overflow: hidden;
-}
-
-.main__section-img {
-    position: absolute;
-    width: 40%;
-    height: auto;
-    opacity: 40%;
-    z-index: 2;
-}
-
-.h1__index{
-    color: #ffaa4400;
-}
-
 h1{
-    color: #fa4;
 }
-
 p{
     height: auto;
-    color: #fa4;
 }
 
 .main__contact{
@@ -81,11 +70,9 @@ p{
     }
     .nombre, .mail {
         height: 40px;
-        text-transform: capitalize;
     }
     .mensaje{
         resize: none;
-        text-transform: capitalize;
     }
     .nombre, .mail, .mensaje{
         width: 350px;
@@ -98,7 +85,6 @@ p{
         height: 35px;
         background-color: black;
         border-color: #fa4;
-        color: #fa4;
         cursor: pointer;
         cursor: hand;
     }
@@ -115,7 +101,6 @@ p{
         padding: 10px;
         text-decoration: none;
         text-align: center;
-        color: #fa4;
         text-transform: capitalize;
         font-size: 30px;
         font-weight: bold;

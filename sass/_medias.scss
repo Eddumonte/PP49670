@@ -2,6 +2,9 @@
     .main__section-article-video {
         width: 100%;
     }
+    .footer{
+        position: fixed;
+    }
 }
 .nav__a-h2-br{
     display: none;
@@ -12,21 +15,20 @@
     }
 }
 
-@media (max-width: 1020px){
-    .nav__a-h2-br{
-        display: block;
-    }
+@media (max-width: 1070px){
     .nav__ul-li{
         width: auto;
         padding: 8px;
         display: flex;
         &-a{
-        font-size: 15px;
+            font-size: 15px;
         }
     }
     .nav__a-h2{
         font-size: 18px;
-
+        &-br{
+            display: block;
+        }
     }
     .main__contact{
         justify-content: center;   
@@ -44,11 +46,58 @@
             }
             .redes{
                 font-size: 20px;
+                margin: 10px 0;
             }
+        }
+    }
+    .main__port{
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "carrusel-1"
+        "parrafo-1"
+        "carrusel-2"
+        "parrafo-2"
+        "carrusel-3"
+        "parrafo-3";
+        #conten__items-carrusel-1, #conten__items-carrusel-2, #conten__items-carrusel-3{
+            height: 330px;
+            width: 500px;
+            justify-self: center;
+            .item-carrusel{
+                height: 330px;
+            }
+        }
+        .primer-parrafo, .segundo-parrafo, .tercer-parrafo{
+            text-align: center;
         }
     }
 }
 @media (max-width:599px){
+        .main__port{
+        #conten__items-carrusel-1, #conten__items-carrusel-2, #conten__items-carrusel-3{
+            height: 150px;
+            width: 250px;
+            .item-carrusel{
+                height: 150px;
+            }
+        }
+    }
+    .nav{
+        &__ul{
+            display: grid;
+            margin: 0;
+            justify-content: flex-end;
+            &-li{
+                padding: 5px;
+            }
+        }
+        &__a{
+            display: block;
+        }
+        &__logo{
+            margin: 0;
+        }
+    }
     #contact{
         background-color: #00000000;
         display: block;
@@ -57,23 +106,12 @@
             background-color: #00000099;
         }
     }
-    .nav__ul{
-        display: grid;
-        margin: 0;
-        justify-content: flex-end;
-        &-li{
-            padding: 5px;
-        }
-    }
     .contact__data{
         display: grid;
         background-color: #00000099;
-    }
-    .nav__a{
-        display: block;
-    }
-    .nav__logo{
-        margin: 0;
+        .info{
+            margin: 10px 0;
+        }
     }
     .main__contact{
         overflow: scroll;

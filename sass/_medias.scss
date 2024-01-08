@@ -50,16 +50,23 @@
             }
         }
     }
-    .main__port{
+    .main__ns{
         grid-template-columns: 1fr;
         grid-template-areas: 
+        "titulo"
         "carrusel-1"
         "parrafo-1"
         "carrusel-2"
         "parrafo-2"
         "carrusel-3"
-        "parrafo-3";
-        #conten__items-carrusel-1, #conten__items-carrusel-2, #conten__items-carrusel-3{
+        "parrafo-3"
+        "carrusel-4"
+        "parrafo-4";
+        &-titulo{
+            font-size: 30px;
+            justify-content: center;
+        }
+        #conten__items-carrusel-1, #conten__items-carrusel-2, #conten__items-carrusel-3, #conten__items-carrusel-4{
             height: 330px;
             width: 500px;
             justify-self: center;
@@ -67,20 +74,29 @@
                 height: 330px;
             }
         }
-        .primer-parrafo, .segundo-parrafo, .tercer-parrafo{
+        .primer-parrafo, .segundo-parrafo, .tercer-parrafo, .cuarto-parrafo{
             text-align: center;
+            font-size: 18px;
         }
     }
+    .main__port {
+        &-titulo{
+            font-size: 18px;
+        }
 }
 @media (max-width:599px){
-        .main__port{
-        #conten__items-carrusel-1, #conten__items-carrusel-2, #conten__items-carrusel-3{
+        .main__ns{
+            &-titulo{
+                font-size: 25px;
+            }
+        #conten__items-carrusel-1, #conten__items-carrusel-2, #conten__items-carrusel-3, #conten__items-carrusel-4{
             height: 150px;
             width: 250px;
             .item-carrusel{
                 height: 150px;
             }
         }
+    }
     }
     .nav{
         &__ul{

@@ -5,7 +5,6 @@
     box-sizing: border-box;
     color: #fa4;
 }
-
 body {
     height: 100vh;
     background-color: black;
@@ -38,71 +37,4 @@ h1{
 }
 p{
     height: auto;
-}
-
-.main__contact{
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    &-fondo{
-        position: absolute;
-        z-index: 0;
-        width: 100%;
-        height: 100vh;
-    }
-}
-#contact{
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    z-index: 1;
-    background-color: #00000099;
-    .contact__form{
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-self: center;
-        align-items: center;
-        &-h1{
-            font-size: 30px;
-        }
-    }
-    .nombre, .mail {
-        height: 40px;
-    }
-    .mensaje{
-        resize: none;
-    }
-    .nombre, .mail, .mensaje{
-        width: 350px;
-        border-color: #ffaa44aa;
-        background-color: black;
-        -webkit-text-fill-color: #fa4;
-    }
-    .enviar{
-        width: 80px;
-        height: 35px;
-        background-color: black;
-        border-color: #fa4;
-        cursor: pointer;
-        cursor: hand;
-    }
-}
-.contact__data{
-    height: 100%;
-    .info {
-        margin: 20px 0;
-        font-size: 25px;
-        font-weight: bold;
-    }
-    .redes{
-        display: inline-flex;
-        padding: 10px;
-        text-decoration: none;
-        text-align: center;
-        text-transform: capitalize;
-        font-size: 30px;
-        font-weight: bold;
-    }
 }

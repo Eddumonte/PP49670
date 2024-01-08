@@ -79,6 +79,18 @@
             font-size: 18px;
         }
     }
+    .body__nos-main{
+        &-art, &-parrafos{
+            font-size: 18px;
+            &-img{
+                width: 400px;
+                height: 60px;
+            }
+        }
+        &-h3, &-h4{
+            font-size: 25px;
+        }
+    }
     .main__port {
         &-titulo{
             font-size: 18px;
@@ -120,6 +132,9 @@
         .contact__form{
             width: 100%;
             background-color: #00000099;
+            .nombre, .mail, .mensaje{
+                width: 250px;
+            }
         }
     }
     .contact__data{

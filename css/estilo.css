@@ -281,6 +281,35 @@ p {
   grid-area: parrafo-4;
 }
 
+.body__nos {
+  background-image: linear-gradient(black, rgb(37, 33, 109), black, rgb(37, 33, 109), black);
+  background-color: rgb(17, 17, 17);
+}
+.body__nos-main {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 40px;
+}
+.body__nos-main-art, .body__nos-main-h3, .body__nos-main-h4, .body__nos-main-parrafos {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+  font-size: 25px;
+}
+.body__nos-main-art-img, .body__nos-main-h3-img, .body__nos-main-h4-img, .body__nos-main-parrafos-img {
+  width: 600px;
+  height: 90px;
+}
+.body__nos-main-h3, .body__nos-main-h4 {
+  font-size: 50px;
+}
+.body__nos-main-h4 a:hover {
+  transform: scale(1.4);
+  transition: 100ms ease-in-out;
+  color: white;
+}
+
 .footer {
   width: 100vw;
   background-color: black;
@@ -362,6 +391,16 @@ p {
     text-align: center;
     font-size: 18px;
   }
+  .body__nos-main-art, .body__nos-main-parrafos {
+    font-size: 18px;
+  }
+  .body__nos-main-art-img, .body__nos-main-parrafos-img {
+    width: 400px;
+    height: 60px;
+  }
+  .body__nos-main-h3, .body__nos-main-h4 {
+    font-size: 25px;
+  }
   .main__port-titulo {
     font-size: 18px;
   }
@@ -400,6 +439,9 @@ p {
   #contact .contact__form {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.6);
+  }
+  #contact .contact__form .nombre, #contact .contact__form .mail, #contact .contact__form .mensaje {
+    width: 250px;
   }
   .contact__data {
     display: grid;

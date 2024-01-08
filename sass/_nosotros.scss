@@ -1,0 +1,28 @@
+.body__nos{
+    background-image: linear-gradient(black, rgb(37, 33, 109), black, rgb(37, 33, 109), black);
+    background-color: rgb(17, 17, 17);
+    &-main{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 40px;
+        &-art, &-h3, &-h4, &-parrafos{
+            &-img{
+                width: 600px;
+                height: 90px;
+            }
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+            font-size: 25px;
+        }
+        &-h3, &-h4{
+            font-size: 50px;
+        }
+        &-h4 a:hover{
+            transform: scale(1.4);
+            transition: 100ms ease-in-out;
+            color: white;
+        }
+    }
+}

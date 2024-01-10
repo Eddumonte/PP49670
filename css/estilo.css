@@ -129,9 +129,11 @@ p {
 }
 #contact .nombre, #contact .mail, #contact .mensaje {
   width: 350px;
-  border-color: rgba(221, 170, 68, 0.6666666667);
+  border-color: #ddaa44;
   background-color: black;
   -webkit-text-fill-color: #ddaa44;
+  font-size: 15px;
+  padding: 3px 7px;
 }
 #contact .enviar {
   width: 80px;

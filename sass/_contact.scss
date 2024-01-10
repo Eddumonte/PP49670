@@ -34,9 +34,11 @@
     }
     .nombre, .mail, .mensaje{
         width: 350px;
-        border-color: #ddaa44aa;
+        border-color: #ddaa44;
         background-color: black;
         -webkit-text-fill-color: #ddaa44;
+        font-size: 15px;
+        padding: 3px 7px;
     }
     .enviar{
         width: 80px;

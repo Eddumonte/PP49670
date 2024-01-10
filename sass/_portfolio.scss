@@ -17,9 +17,9 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
         gap: 15px;
-        padding-bottom: 60px;
+        padding: 0 15px 60px;
         &-fotos{
-            border: 2px solid #fa4;
+            border: 2px solid #ddaa44;
             border-radius: 30px;
             width: 100%;
             height: 100%;

@@ -3,7 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #fa4;
+    color: #ddaa44;
 }
 body {
     height: 100vh;
@@ -11,6 +11,9 @@ body {
     min-height: 100vh;
     font-family: "Gothic A1", sans-serif;
     .main {
+        &__h1{
+            display: none;
+        }
         width: 100%;
         position: relative;
         &__section {
@@ -32,8 +35,6 @@ body {
             }
         }
     }
-}
-h1{
 }
 p{
     height: auto;

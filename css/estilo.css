@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;600&display=swap");
 .nav {
   width: 100vw;
-  border-bottom: 2px solid #fa4;
+  border-bottom: 2px solid #ddaa44;
   display: flex;
   top: 0;
   justify-content: space-between;
@@ -52,7 +52,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fa4;
+  color: #ddaa44;
 }
 
 body {
@@ -64,6 +64,9 @@ body {
 body .main {
   width: 100%;
   position: relative;
+}
+body .main__h1 {
+  display: none;
 }
 body .main__section {
   width: 100%;
@@ -126,15 +129,15 @@ p {
 }
 #contact .nombre, #contact .mail, #contact .mensaje {
   width: 350px;
-  border-color: rgba(255, 170, 68, 0.6666666667);
+  border-color: rgba(221, 170, 68, 0.6666666667);
   background-color: black;
-  -webkit-text-fill-color: #fa4;
+  -webkit-text-fill-color: #ddaa44;
 }
 #contact .enviar {
   width: 80px;
   height: 35px;
   background-color: black;
-  border-color: #fa4;
+  border-color: #ddaa44;
   cursor: pointer;
   cursor: hand;
 }
@@ -178,10 +181,10 @@ p {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 15px;
-  padding-bottom: 60px;
+  padding: 0 15px 60px;
 }
 .main__port-cont-img-fotos {
-  border: 2px solid #fa4;
+  border: 2px solid #ddaa44;
   border-radius: 30px;
   width: 100%;
   height: 100%;
@@ -206,7 +209,7 @@ p {
 }
 
 #conten__items-carrusel-1, #conten__items-carrusel-2, #conten__items-carrusel-3, #conten__items-carrusel-4 {
-  border: 3px solid #fa4;
+  border: 3px solid #ddaa44;
   height: 330px;
   width: 500px;
   overflow: hidden;
@@ -282,7 +285,7 @@ p {
 }
 
 .body__nos {
-  background-image: linear-gradient(black, rgb(37, 33, 109), black, rgb(37, 33, 109), black);
+  background-image: linear-gradient(black, rgba(35, 35, 110, 0.685), black, rgba(35, 35, 110, 0.685), black);
   background-color: rgb(17, 17, 17);
 }
 .body__nos-main {
@@ -316,7 +319,7 @@ p {
   position: relative;
   text-align: center;
   bottom: 0;
-  border-top: 2px solid #fa4;
+  border-top: 2px solid #ddaa44;
 }
 
 @media (min-width: 1260px) {

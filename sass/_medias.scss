@@ -77,6 +77,10 @@
         .primer-parrafo, .segundo-parrafo, .tercer-parrafo, .cuarto-parrafo{
             text-align: center;
             font-size: 18px;
+            padding: 0;
+            &-texto{
+                padding: 0 30px;
+            }
         }
     }
     .body__nos-main{

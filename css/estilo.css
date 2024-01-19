@@ -266,6 +266,7 @@ p {
   gap: 20px;
   text-align: start;
   align-self: center;
+  padding: 0 20px 0 20px;
 }
 
 .primer-parrafo {
@@ -395,6 +396,10 @@ p {
   .main__ns .primer-parrafo, .main__ns .segundo-parrafo, .main__ns .tercer-parrafo, .main__ns .cuarto-parrafo {
     text-align: center;
     font-size: 18px;
+    padding: 0;
+  }
+  .main__ns .primer-parrafo-texto, .main__ns .segundo-parrafo-texto, .main__ns .tercer-parrafo-texto, .main__ns .cuarto-parrafo-texto {
+    padding: 0 30px;
   }
   .body__nos-main-art, .body__nos-main-parrafos {
     font-size: 18px;
